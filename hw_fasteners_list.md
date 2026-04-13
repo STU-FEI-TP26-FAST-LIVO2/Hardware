@@ -1,3 +1,4 @@
+# Sensors module
 ### LiDAR
 | Quantity | Type | Length | Head Type  | Notes                |
 | -------- | ---- | ------ | ---------- | -------------------- |
@@ -23,5 +24,8 @@
 | -------- | ---- | ------ | ------------- | ------------ |
 | 4×       | M3   | 10 mm  | Hex (5,5 mm)  | Front mount  |
 
-
+### Bottom to platform
+| Quantity | Type | Length | Head Type     | Notes        |
+| -------- | ---- | ------ | ------------- | ------------ |
+| 4×       | M5   | 10 mm  | Hex (5,5 mm)  | Mount of sensors module into the holding platform |
 
