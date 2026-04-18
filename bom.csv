@@ -1,0 +1,31 @@
+Part Name,full_assembly
+Working BOM,"as of April 18, 2026 at 4:02:27 PM UTC"
+Exported by,xondruskam@stuba.sk
+Time of Export,"4:02 PM Apr 18, 2026"
+
+,Part Number,Part Name,Revision/Version,Description,Item Number,Lifecycle,Revision,State,Quantity,Material,Change Order
+,2026-04-16-22-42-03-118,full_assembly,,,,,,Working,1,,
+1,2026-04-16-22-42-56-429,alu_profile,,,,,,Working,1,Steel,
+2,2026-04-14-16-02-33-037,handles1,,,,,,Working,1,Steel,
+3,DIN 934 - M4 x 0.7 Steel 6 Plain,Hexagon Nut DIN 934 - M4 x 0.7 Steel 6 Plain,,Hexagon Nut DIN 934 - M4 x 0.7,,,,Working,2,"Steel 6, Plain",
+4,DIN 912 - M5 x 0.8 x 35 Steel 4.6 Plain,Hexagon Socket Head Cap Screw DIN 912 - M5 x 0.8 x 35 Steel 4.6 Plain,,Hexagon Socket Head Cap Screw DIN 912 - M5 x 0.8 x 35,,,,Working,2,"Steel 4.6, Plain",
+5,2026-04-17-15-38-20-862,sensors_module_platform,,,,,,Working,1,Steel,
+6,2026-03-15-10-35-25-822,sensors_module_bottom,,,,,,Working,1,Steel,
+7,DIN 934 - M5 x 0.8 Steel 6 Plain,Hexagon Nut DIN 934 - M5 x 0.8 Steel 6 Plain,,Hexagon Nut DIN 934 - M5 x 0.8,,,,Working,6,"Steel 6, Plain",
+8,DIN 912 - M5 x 0.8 x 40 Steel 4.6 Plain,Hexagon Socket Head Cap Screw DIN 912 - M5 x 0.8 x 40 Steel 4.6 Plain,,Hexagon Socket Head Cap Screw DIN 912 - M5 x 0.8 x 40,,,,Working,2,"Steel 4.6, Plain",
+9,2026-03-09-20-47-32-778,Basler Lens 6mm C-Mount v02,,,,,,Working,1,Steel,
+10,2026-03-09-20-34-58-537,Basler ace2 USB3,,,,,,Working,1,Generisch,
+11,2026-03-09-20-46-17-914,blaze_ace_adapter,,blaze/ace-Adapter AMA,,,,Working,1,Steel,
+12,2026-04-09-10-57-03-371,sm_wall_side,,,,,,Working,2,Steel,
+13,2026-04-09-10-55-33-947,sm_wall_back,,,,,,Working,2,Steel,
+14,2026-03-14-23-06-42-400,sensors_modul_top,,,,,,Working,1,Steel,
+15,2026-03-08-14-38-50-925,LiDAR,,,,,,Working,1,Steel,
+16,DIN 912 - M5 x 0.8 x 55 Steel 4.6 Plain,Hexagon Socket Head Cap Screw DIN 912 - M5 x 0.8 x 55 Steel 4.6 Plain,,Hexagon Socket Head Cap Screw DIN 912 - M5 x 0.8 x 55,,,,Working,4,"Steel 4.6, Plain",
+17,DIN 912 - M4 x 0.7 x 16 Steel 4.6 Plain,Hexagon Socket Head Cap Screw DIN 912 - M4 x 0.7 x 16 Steel 4.6 Plain,,Hexagon Socket Head Cap Screw DIN 912 - M4 x 0.7 x 16,,,,Working,6,"Steel 4.6, Plain",
+18,DIN 912 - M3 x 0.5 x 10 Steel 4.6 Plain,Hexagon Socket Head Cap Screw DIN 912 - M3 x 0.5 x 10 Steel 4.6 Plain,,Hexagon Socket Head Cap Screw DIN 912 - M3 x 0.5 x 10,,,,Working,7,"Steel 4.6, Plain",
+19,2026-03-24-17-37-45-235,BreadBord.step,,,,,,Working,1,,
+19.1,2026-03-25-18-53-00-214,Component1,,,,,,Working,1,Steel,
+19.2,2026-03-25-18-53-00-219,Component2,,,,,,Working,1,Steel,
+20,2026-03-16-16-32-24-828,6DOF_IMU_24_Click_v100,,Open CASCADE Model,,,,Working,1,,
+20.1,2026-03-25-19-01-00-205,Component37,,,,,,Working,1,Steel,
+21,Breadboard-SYB-46,Breadboard-SYB-46,,,,,,Working,1,PET-Kunststoff,
