@@ -2,70 +2,84 @@
 
 Hardware related stuff (circuit diagrams, CAD models, ...)
 
-# Fastener \& Hardware Bill of Materials
+# Fasteners \& Nuts — Sorted by Connection (Parts They Join)
+
+|#|Fastener|Type|Qty|
+|-|-|-|-|
+|1|Countersunk Screw JIS B 1111 - M5x6 - H Steel 4.6 Plain|Screw|8|
+|2|Countersunk Screw JIS B 1111 - M5x30 H Steel 4.6 Plain|Screw|4|
+|3|Hexagon Nut DIN 934 - M5 x 0.8 Steel 6 Plain|Nut|8|
+|4|Countersunk Screw JIS B 1111 - M5x20 H Steel 4.6 Plain|Screw|4|
+|5|Hexagon Socket Head Cap Screw DIN 912 - M5 x 0.8 x 6 Steel 4.6 Plain|Screw|4|
+|6|Hexagon Socket Head Cap Screw DIN 912 - M3 x 0.5 x 10 Steel 4.6 Plain|Screw|7|
+|7|Hexagon Socket Head Cap Screw DIN 912 - M3 x 0.5 x 12 Steel 4.6 Plain|Screw|4|
+|8|Hexagon Socket Head Cap Screw DIN 912 - M4 x 0.7 x 16 Steel 4.6 Plain|Screw|4|
+|9|Washer DIN 125-1 - 2.2 - A Steel 100 HV Plain|Washer|4|
+|10|Broached Hexagon Socket Head Cap Screw ASME B18.3.1M - M2.5x0.45 x 30 Steel Grade 2 Plain|Screw|4|
+|11|Stud DIN 938 - M3 x 30 Steel 4.6 Plain/M2.5|Stud|4|
+|12|Hexagon Regular Nut DIN EN 24032 - M3 Steel 6 Plain|Nut|4|
+|13|DIN 912 - M5 x 0.8 x 10 Steel 4.6 Plain|Screw|2|
+|14|Hex Pillar M2.5 x 20 mm|Pillar|4|
+|15|Round Pillar M2.5 x 10mm|Pillar|4|
 
 
 
-## 1\. Screws (Hexagon Socket Head Cap DIN 912)
 
-| No. | DIN Standard | Size | Thread x Pitch | Length | Qty | Inferred Target Component(s) |
-|---|---|---|---|---|---|---|
-| 1 | DIN 912 | **M3** | M3 x 0.5 | 10 mm | 3 | `sensors_module_bottom_v2` (Basler camera mount, Z=4.8, XY near camera center) |
-| 2 | DIN 912 | **M3** | M3 x 0.5 | 12 mm | 4 | `sm_wall_back` / `LiDAR` (Z=12.2, corners of back wall \& LiDAR mounting) |
-| 3 | DIN 912 | **M4** | M4 x 0.7 | 12 mm | 2 | `sm_wall_front` / `lens_cover` (Z=4.9, Y=28.8 near front wall & lens cover) |
-| 4 | DIN 912 | **M4** | M4 x 0.7 | 16 mm | 4 | `sensors_modul_top_v3` / `sm_wall_back` (Z=11.5, 4-corner pattern on top sensor module) |
-| 5 | DIN 912 | **M5** | M5 x 0.8 | 35 mm | 2 | `handles1` / `alu_profile` (Z=2.2, Y at 2.5 & 8.5 handle attachment to rail) |
-| 6 | DIN 912 | **M5** | M5 x 0.8 | 40 mm | 2 | `sensors_module_platform` / `sensors_module_bottom_v2` (Z=0.5, Y at 19 & 22.75) |
-| 7 | DIN 912 | **M5** | M5 x 0.8 | 55 mm | 4 | `sensors_module_platform` (4-corner pattern, Z=0.5 through bottom platform) |
 
----
+**Total fasteners: 69**
 
-## 2\. Nuts (HexagoN DIN 934)
+## Summary by Connection Zone
 
-| No. | DIN Standard | Size | Thread x Pitch | Qty | Paired With | Inferred Target Component(s) |
-|---|---|---|---|---|---|---|
-| 1 | DIN 934 | **M4** | M4 x 0.7 | 2 | M5x35 screws (via handle bracket) | `handles1` / `alu_profile` nut retention |
-| 2 | DIN 934 | **M5** | M5 x 0.8 | 6 | M5x40  + M5x55 screws | `sensors_module_platform` / `sm_wall_side` clamping nuts |
+### Structural Frame (alu\_profile / alu\_profile\_Lko)
 
-> **Note:** M4 nuts (DIN 934 M4x0.7) are positioned at Y=2.5 & Y=8.5 with Z=2.2, co-located with the M5x35 handle screws, likely t-slot nuts inside the `alu_profile` channel. The M5 nuts are at Z=4.06 & 5.5, sitting above the platform base, retaining the vertical frame screws.
+|Fastener|Type|Qty|Connects|
+|-|-|-|-|
+|Countersunk Screw JIS B 1111 - M5x6 ✅|Screw|8|alu\_profile\_Lko ↔ alu\_profile via kamienok\_profile|
 
----
+### Sensors Enclosure (sensors\_module\_bottom / sm\_wall\_back / sm\_wall\_front / sm\_wall\_back / sensors\_modul\_top)
 
-## 3\. Summary Table
+|Fastener|Type|Qty|Connects|
+|-|-|-|-|
+|Hex Socket Cap Screw DIN 912 - M3x12 ✅|Screw|4|sensors\_module\_bottom\_v2 ↔ sensors\_module\_top|
+|Hex Socket Cap Screw DIN 912 - M3x10|Screw|4|PCB\_with\_IMU ↔ sensors\_modul\_top\_v3|
+|Hex Socket Cap Screw DIN 912 - M3x10|Screw|3|camera ↔ sensors\_module\_bottom\_v2|
+|Countersunk Screw JIS B 1111 - M5x20|Screw|4|sensors\_module\_bottom\_v2 ↔ alu\_profile\_Lko|
+|Hex Nut DIN 934 - M5 x 0.8|Nut|4|With M5 screws above|
+|Hex Socket Cap Screw DIN 912 - M4x16|Screw|4|LiDAR ↔ sensors\_module\_top|
 
-|Type|Standard|Size|Length|Qty|Material|Finish|
-|-|-|-|-|-|-|-|
-|SHCS|DIN 912|M3 x 0.5|10 mm|3|Steel 4.6|Plain|
-|SHCS|DIN 912|M3 x 0.5|12 mm|4|Steel 4.6|Plain|
-|SHCS|DIN 912|M4 x 0.7|12 mm|2|Steel 4.6|Plain|
-|SHCS|DIN 912|M4 x 0.7|16 mm|4|Steel 4.6|Plain|
-|SHCS|DIN 912|M5 x 0.8|35 mm|2|Steel 4.6|Plain|
-|SHCS|DIN 912|M5 x 0.8|40 mm|2|Steel 4.6|Plain|
-|SHCS|DIN 912|M5 x 0.8|55 mm|4|Steel 4.6|Plain|
-|Hex Nut|DIN 934|M4 x 0.7|-|2|Steel 6|Plain|
-|Hex Nut|DIN 934|M5 x 0.8|-|6|Steel 6|Plain|
-||||**TOTAL**|**29**|||
+### ACU / Jetson Case (acu\_jetson\_case)
 
----
+|Fastener|Type|Qty|Connects|
+|-|-|-|-|
+|Countersunk Screw JIS B 1111 - M5x30|Screw|4|alu\_profile\_Lko ↔ acu\_jetson\_case|
+|Hex Nut DIN 934 - M5 x 0.8|Nut|4|With M5 screws above|
+|Broached Hex Cap Screw ASME B18.3.1M - M2.5x0.45x30|Screw|4|acu\_jetson\_case ↔ jetson\_agx\_orin\_model|
+|Washer DIN 125-1 - 2.5|Washer|4|Under M2.5 screws at acu\_jetson\_case|
 
-## 4\. Fastener-to-Component Mapping
 
-|Fastener|Qty|From Component|To Component|Notes|
-|-|-|-|-|-|
-|M5x35 SHCS + M4 Nut|2+2|`handles1`|`alu\\\_profile`|Handle clamped to aluminium extrusion rail|
-|M5x40 SHCS + M5 Nut|2+2|`sensors\\\_module\\\_platform`|`sensors\\\_module\\\_bottom\\\_v2`|Platform to bottom sensor module|
-|M5x55 SHCS + M5 Nut|4+4|`sensors\\\_module\\\_platform`|`sm\\\_wall\\\_side`|Through-bolts for full sensor stack|
-|M4x16 SHCS|4|`sensors\\\_modul\\\_top\\\_v3`|`sm\\\_wall\\\_back`|4-corner mounting of top sensor module|
-|M4x12 SHCS|2|`sm\\\_wall\\\_front`|`lens\\\_cover`|Front wall / lens cover retention|
-|M3x12 SHCS|4|`sm\\\_wall\\\_back`|`LiDAR`|LiDAR secured to back wall (4-corner)|
-|M3x10 SHCS|3|`sensors\\\_module\\\_bottom\\\_v2`|`Basler ace2 USB3`|Camera mounting screws|
 
----
+### Handles
 
-## 5\. Assembly Notes
+|Fastener|Type|Qty|Connects|
+|-|-|-|-|
+|Hex Socket Cap Screw DIN 912 - M5x6|Screw|4|handles ↔ alu\_profile|
 
-* All screws are **Hexagon Socket Head Cap (SHCS)** Allen key / hex socket drive.
-* All nuts are **standard Hexagon Nuts (DIN 934)** no locking feature.
-* The **M4 nuts** co-located near the handles suggest **T-slot integration** inside the `alu\\\_profile`.
-* Total fastener count: **29 individual hardware items**.
+### Jetson AGX Orin Sub-Assembly (jetson\_agx\_orin\_model)
+
+|Fastener|Type|Qty|Connects|
+|-|-|-|-|
+|Stud DIN 938 - M3x30|Stud|4|jetson\_agx\_orin\_model ↔ stlpik (pillars)|
+|Hex Regular Nut DIN EN 24032 - M3|Nut|4|Pairs with M3 studs → stlpik retention|
+|Pillar Hex - M2.5 |Pillar|4x20mm, 4x10mm|jetson\_agx\_orin\_model|
+|Pillar Round - M2.5 |Pillar|4x10mm, 4x5mm|jetson\_agx\_orin\_model|
+
+### LiDAR connection box
+
+|Fastener|Type|Qty|Connects|
+|-|-|-|-|
+|DIN 912 - M5 x 0.8 x 10 Steel 4.6 Plain|Screw|2|connection\_box ↔ sensors\_module\_top|
+
+# Extrinsic sensor calibrations
+extrinsic_T: [0., 0., -0.06954819845] //translation IMU to LiDAR
+extrinsic_R: [-1., 0., 0., 0., 1., 0., 0., 0., -1] //rotation IMU to LiDAR
 
