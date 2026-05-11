@@ -80,6 +80,14 @@ Hardware related stuff (circuit diagrams, CAD models, ...)
 |DIN 912 - M5 x 0.8 x 10 Steel 4.6 Plain|Screw|2|connection\_box ↔ sensors\_module\_top|
 
 # Extrinsic sensor calibrations
-extrinsic_T: [0., 0., -0.06954819845] //translation IMU to LiDAR
-extrinsic_R: [-1., 0., 0., 0., 1., 0., 0., 0., -1] //rotation IMU to LiDAR
+> This is old calibration for breadboard prototype without PCB
+extrinsic_T: [0., 0., -0.06954819845] - translation IMU to LiDAR frame [x, y, z]
+extrinsic_R: [1., 0., 0., 0., 1., 0., 0., 0., -1] - rotation IMU to LiDAR frame
+
+> New calib
+extrinsic_T: [0., 0., -0.06841820091] - translation IMU to LiDAR frame [x, y, z]
+extrinsic_R: [1., 0., 0., 0., -1., 0., 0., 0., -1] - rotation IMU to LiDAR frame
+
+Rcl: [1., 0., 0., 0., 0., -1., 0., 1., 0.] - rotation camera to LiDAR frame
+Pcl: [0., 0.0957, -0.01060009275] - translation camera to LiDAR frame
 
