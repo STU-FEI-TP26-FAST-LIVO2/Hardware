@@ -89,5 +89,6 @@ extrinsic_T: [0., 0., -0.06841820091] - translation IMU to LiDAR frame [x, y, z]
 extrinsic_R: [1., 0., 0., 0., -1., 0., 0., 0., -1] - rotation IMU to LiDAR frame
 
 Rcl: [1., 0., 0., 0., 0., -1., 0., 1., 0.] - rotation camera to LiDAR frame
-Pcl: [0., 0.0957, -0.01060009275] - translation camera to LiDAR frame
+Pcl: [0., 0.1042, -0.01060009275] - translation camera to LiDAR frame
 
+ 
