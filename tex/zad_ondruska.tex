@@ -1,0 +1,47 @@
+\documentclass{FEIstyle}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    language=Matlab,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!60!black},
+    stringstyle=\color{red},
+    breaklines=true,
+    frame=single
+}
+
+\addbibresource{inc/ref.bib}
+\FEIauthor{Bc. Matúš Ondruška}
+
+\FEItitle{Výstupná správa do dokumentácie}
+
+\FEIpredmet{Tímový projekt}
+
+\FEIdate{2025/2026}
+
+
+\begin{document}
+
+% \frontmatter
+
+\FEIcover
+\FEIcontent
+
+\mainmatter
+
+\include{main.tex}
+
+
+% \backmatter
+
+%% Attachment A
+%\FEIappendix{Algoritmus\label{att:algorithms}}{includes/attachmentA}
+
+\FEIbibliography
+\end{document}
