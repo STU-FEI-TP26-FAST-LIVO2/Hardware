@@ -128,19 +128,19 @@ Full listing of construction parts below. The relevant technical drawings are li
 
 $extrinsic_R$ (rotation IMU to LiDAR frame):
 
-$\begin{bmatrix}-1 & 0 & 0 \\0 & 1 & 0 \\0 & 0 & -1\end{bmatrix}$
+$\begin{bmatrix}-1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & -1\end{bmatrix}$
 
 $extrinsic_T$ (translation IMU to LiDAR frame):
 
-$\begin{bmatrix}0 \\0 \\-0.06955\end{bmatrix}$
+$\begin{bmatrix}0 \\ 0 \\ -0.06955\end{bmatrix}$
 
 $Rcl$ (rotation camera to LiDAR frame): 
 
-$\begin{bmatrix}-1 & 0 & 0 \\0 & 0 & -1 \\0 & -1 & 0\end{bmatrix}$
+$\begin{bmatrix}-1 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & -1 & 0\end{bmatrix}$
 
 $Pcl$ (translation camera to LiDAR frame):
 
-$\begin{bmatrix}0 \\0.09590 \\-0.003819\end{bmatrix}$
+$\begin{bmatrix}0 \\ 0.09590 \\ -0.003819\end{bmatrix}$
 
 <img title="transformations" alt="sensoric transformations" src="transformations.png">
 
