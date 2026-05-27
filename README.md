@@ -1,6 +1,56 @@
 # TP-Hardware
 
-Construction part of Hardware
+Mechanical part of Hardware<br>
+[Datasheets](parameters_datasheets/)<br>
+[.step files](printable/step/)<br>
+[.stl files](printable/stl/)<br>
+[Technical drawings](technical_drawings/)<br>
+
+# 3D Models of Construction Parts
+
+Full listing of construction parts below. The relevant technical drawings are linked to each component
+
+## sensors_module_top
+
+[Technical drawing](technical_drawings/sensors_modul_top_drawing.pdf)
+
+<img title="sensors_module_top" alt="sensors_module_top" src="models_img/sensors_modul_top.png">
+
+## sensors_module_bottom
+
+[Technical drawing](technical_drawings/sensors_module_bottom_drawing.pdf)
+
+<img title="sensors_module_bottom" alt="sensors_module_bottom" src="models_img/sensors_module_bottom.png">
+
+## sm_wall_back
+
+[Technical drawing](technical_drawings/sm_wall_back_drawing.pdf)
+
+<img title="sm_wall_back" alt="sm_wall_back" src="models_img/sm_wall_back.png">
+
+## sm_wall_front
+
+[Technical drawing](technical_drawings/sm_wall_front_drawing.pdf)
+
+<img title="sm_wall_front" alt="sm_wall_front" src="models_img/sm_wall_front.png">
+
+## sm_wall_side
+
+[Technical drawing](technical_drawings/sm_wall_side_drawing.pdf)
+
+<img title="sm_wall_side" alt="sm_wall_side" src="models_img/sm_wall_side.png">
+
+## acu_jetson_case
+
+[Technical drawing](technical_drawings/acu_jetson_case_drawing.pdf)
+
+<img title="acu_jetson_case" alt="acu_jetson_case" src="models_img/acu_jetson_case.png">
+
+## handles
+
+[Technical drawing](technical_drawings/handles_drawing.pdf)
+
+<img title="handles" alt="handles" src="models_img/handles.png">
 
 # Fasteners \& Nuts — Sorted by Connection (Parts They Join)
 
@@ -77,8 +127,6 @@ Construction part of Hardware
 |DIN 912 - M5 x 0.8 x 10 Steel 4.6 Plain|Screw|2|connection\_box ↔ sensors\_module\_top|
 
 # Extrinsic sensor calibrations
-> This is old calibration for breadboard prototype without PCB <br> extrinsic_T = [0., 0., -0.06954819845] - translation IMU to LiDAR frame [x, y, z] <br> extrinsic_R = [-1., 0., 0., 0., 1., 0., 0., 0., -1] - rotation IMU to LiDAR frame
-
 
 $extrinsic_R$ (rotation IMU to LiDAR frame) = 
 $$
@@ -137,6 +185,6 @@ $$
 - STM32 F103 Bluepill
 - TTL/RS232 converter
 
-> All technical drawings are in /technical_drawings subfolder
+## Full assembly isometric view
 
-<img title="full_assembly" alt="full_assembly" src="full_assembly.png">
+<img title="full_assembly" alt="full_assembly" src="models_img/full_assembly.png">
