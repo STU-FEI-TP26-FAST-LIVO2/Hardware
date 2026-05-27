@@ -117,8 +117,6 @@ Full listing of construction parts below. The relevant technical drawings are li
 |-|-|-|-|
 |Stud DIN 938 - M3x30|Stud|4|jetson\_agx\_orin\_model ↔ stlpik (pillars)|
 |Hex Regular Nut DIN EN 24032 - M3|Nut|4|Pairs with M3 studs → stlpik retention|
-|Pillar Hex - M2.5 |Pillar|4x20mm, 4x10mm|jetson\_agx\_orin\_model|
-|Pillar Round - M2.5 |Pillar|4x10mm, 4x5mm|jetson\_agx\_orin\_model|
 
 ### LiDAR connection box
 
@@ -128,39 +126,21 @@ Full listing of construction parts below. The relevant technical drawings are li
 
 # Extrinsic sensor calibrations
 
-$extrinsic_R$ (rotation IMU to LiDAR frame) = 
-$$
-\begin{bmatrix}
--1 & 0 & 0 \\
-0 & 1 & 0 \\
-0 & 0 & -1
-\end{bmatrix}
-$$ 
-$extrinsic_T$ (translation IMU to LiDAR frame) = 
-$$
-\begin{bmatrix}
-0 \\
-0 \\
--0.06955
-\end{bmatrix}
-$$
+$extrinsic_R$ (rotation IMU to LiDAR frame):
 
-$Rcl$ (rotation camera to LiDAR frame) = 
-$$
-\begin{bmatrix}
--1 & 0 & 0 \\
-0 & 0 & -1 \\
-0 & -1 & 0
-\end{bmatrix}
-$$ 
-$Pcl$ (translation camera to LiDAR frame) = 
-$$
-\begin{bmatrix}
-0 \\
-0.09590 \\
--0.003819
-\end{bmatrix}
-$$
+$\begin{bmatrix}-1 & 0 & 0 \\0 & 1 & 0 \\0 & 0 & -1\end{bmatrix}$
+
+$extrinsic_T$ (translation IMU to LiDAR frame):
+
+$\begin{bmatrix}0 \\0 \\-0.06955\end{bmatrix}$
+
+$Rcl$ (rotation camera to LiDAR frame): 
+
+$\begin{bmatrix}-1 & 0 & 0 \\0 & 0 & -1 \\0 & -1 & 0\end{bmatrix}$
+
+$Pcl$ (translation camera to LiDAR frame):
+
+$\begin{bmatrix}0 \\0.09590 \\-0.003819\end{bmatrix}$
 
 <img title="transformations" alt="sensoric transformations" src="transformations.png">
 
