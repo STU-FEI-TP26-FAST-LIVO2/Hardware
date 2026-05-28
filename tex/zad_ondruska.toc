@@ -1,0 +1,8 @@
+\babel@toc {slovak}{}\relax 
+\thispagestyle {plain}
+\contentsline {section}{\numberline {1}Hardvérové komponenty a ich úloha}{3}{section*.1}%
+\contentsline {section}{\numberline {2}3D modely a~mechanická koncepcia}{3}{section*.2}%
+\contentsline {section}{\numberline {3}Transformácie medzi súradnicovými systémami}{4}{section*.4}%
+\contentsline {paragraph}{IMU $\rightarrow $ LiDAR}{5}{figure.caption.5}%
+\contentsline {paragraph}{Kamera $\rightarrow $ LiDAR}{5}{figure.caption.5}%
+\contentsline {section}{\numberline {4}Záver}{5}{section*.6}%
